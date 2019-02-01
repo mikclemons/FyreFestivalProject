@@ -4,5 +4,17 @@ import java.util.List;
 
 public class RegistrationFormLibrary {
 
-    List<RegistrationForm> registrationForms = new ArrayList<>();
+    private List<RegistrationForm> registrationForms = new ArrayList<>();
+
+    public void addToLibrary(RegistrationForm registrationForm) {
+        registrationForms.add(registrationForm);
+
+    }
+
+    public void printLibraryDetails() {
+        for (RegistrationForm form : registrationForms) {
+            System.out.print(form.printDetails());
+        }
+    }
+
 }

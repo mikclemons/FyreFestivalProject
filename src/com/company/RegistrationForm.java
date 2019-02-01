@@ -57,4 +57,11 @@ public class RegistrationForm {
     public void setSpecialRequest(String specialRequest) {
         this.specialRequest = specialRequest;
     }
+
+    public String printDetails(){
+        return(name +  "\n" + address + "\n" + email + "\n" + arrivalDate + "\n"+ specialRequest);
+
+    }
+
+
 }
